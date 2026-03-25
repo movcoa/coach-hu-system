@@ -1,7 +1,6 @@
 streamlit
-fpdf2
-pandas
-mediapipe
 opencv-python-headless
 pillow
+pandas
 numpy
+fpdf2
