@@ -1,7 +1,7 @@
 streamlit
 fpdf2
 pandas
-mediapipe
+mediapipe==0.10.9
 opencv-python-headless
 pillow
 numpy
