@@ -13,7 +13,11 @@ st.set_page_config(page_title="AI 数字化体能评估", layout="wide")
 # ==========================================
 # --- 2. 初始化 AI 核心 (MediaPipe Pose) ---
 # ==========================================
-mp_pose = mp.solutions.pose
+import mediapipe as mp
+# 建议改用下面这种写法，更稳健
+from mediapipe.python.solutions import pose as mp_pose
+from mediapipe.python.solutions import drawing_utils as mp_drawing
+
 mp_drawing = mp.solutions.drawing_utils # 用于在图片上画骨架
 
 # 定义一个 AI 处理函数
